@@ -28,6 +28,12 @@ test-y += $(EMBUNIT_SRC)/TestResult.o
 test-y += $(EMBUNIT_SRC)/TestRunner.o
 test-y += $(EMBUNIT_SRC)/TestSuite.o
 
+#sample driver
+obj-m += mycdrv.o
+mycdrv-y += mycdrv/mycdrv.o
+
+
+
 else
 KDIR := /lib/modules/`uname -r`/build
 
