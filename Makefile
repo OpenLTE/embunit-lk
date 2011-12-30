@@ -11,12 +11,12 @@ obj-m += test.o
 test-y := test_runner.o
 
 #counter module
-test-y += counter.o
-test-y += counterTest.o
+test-y += counter/counter.o
+test-y += counter/counterTest.o
 
 #person module
-test-y += person.o
-test-y += personTest.o
+test-y += person/person.o
+test-y += person/personTest.o
 
 #embunit
 test-y += $(EMBUNIT_SRC)/AssertImpl.o
